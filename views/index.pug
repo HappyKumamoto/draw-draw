@@ -1,12 +1,25 @@
-extends layout
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title てがき ✋" らくがき
+    style.
+      *{
+        text-align: center;
+        background-color:#FFFFBB ;
+        color: #666633;
+        font-family: monospace,serif;
+        }
+  body 
+    if user 
+      a(href="/logout") ログアウト
+      h1 Hello,  <img width="15" heught="15" src="#{user._json.avatar_url}">  #{user.username}!
+    else 
+      a(href="/login") ログイン
 
-block content
-  h1= title
-  p Welcome to #{title}
-  //- a(href="/users") Users 
-  br
-  if user 
-    p Hello,  <img width="15" heught="15" src="#{user._json.avatar_url}">  #{user.username}
-    a(href="/logout") Logout 
-  else 
-    a(href="/login") Login
+      canvas #canvas1 width="300" height="250"
+
+//- extends layout
+//- block content
