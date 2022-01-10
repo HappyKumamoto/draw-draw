@@ -11,6 +11,8 @@ const session = require('express-session');
 const passport = require('passport');
 const GitHubStrategy = require('passport-github2').Strategy;
 
+//const GITHUB_CLIENT_ID = 'XXXXXXXXXX';
+//const GITHUB_CLIENT_SECRET = 'XXXXXXXXXX';
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
 
@@ -50,7 +52,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({ secret: 'cfbgdg66fdd825', resave: false, saveUninitialized: false }));
+//app.use(session({ secret: 'XXXXXXXXXX', resave: false, saveUninitialized: false }));
+app.use(session({ secret: process.env.EXPRESS_SESSION_SECRET, resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
 app.use(passport.session());
 
