@@ -1,6 +1,9 @@
 body{
       text-align: center;
-      background-color:#FFFFBB ;
-      color: #666633;
+      background-color:#0066FF;
+      color: #FFFFBB; /* #666633;*/
       font-family: monospace,serif;
       }
+a{
+      color:#FFFFBB;
+}
