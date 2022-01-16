@@ -6,4 +6,15 @@ block content
   else 
     a(href="/login") ログイン
 
-    canvas #canvas1 width="300" height="250"
+  canvas( id="canvas1" width="300" height="250" )
+
+  div( id="btn-box")
+    button( type="button" onclick="changeImage()" value="1") 保存
+
+  div( id="img-box")
+    img( id="newImg")
+
+  script( src="canvasBoard.js")
+
+  
+  
