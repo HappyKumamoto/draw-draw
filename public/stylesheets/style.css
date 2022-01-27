@@ -1,9 +1,41 @@
-body{
+body {
+      text-align: center;
+      background: rgb(238, 232, 232);
+    }
+    
+
+/*body{
       text-align: center;
       background-color:#0066FF;
       color: #FFFFBB; /* #666633;*/
-      font-family: monospace,serif;
+ /*     font-family: monospace,serif;
       }
 a{
       color:#FFFFBB;
-}
+} */
+
+/*body{
+      /*background-color:rgb(228, 166, 32); */
+/*      background-color: #CCCC00 ;
+      color:brown;
+      text-align: center;
+      position: relative;
+      top:100px;
+      /*margin: 0;*/
+      /*padding: 0;*/
+ /*   }
+    canvas {
+      position: relative;
+      background-color: white;
+      border:none;  
+      /*3px solid #000;*/
+ /*   }
+    
+    div#img-box{
+      text-align: center;
+      border:none;  
+      /*3px solid #000;*/
+ /*     background-color: white;
+      width:500px;
+      margin:0 auto;
+    }*/
