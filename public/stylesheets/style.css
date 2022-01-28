@@ -1,9 +1,12 @@
-body{
+body {
       text-align: center;
-      background-color:#0066FF;
-      color: #FFFFBB; /* #666633;*/
-      font-family: monospace,serif;
-      }
-a{
-      color:#FFFFBB;
-}
+      background: rgb(238, 232, 232);
+    }
+    
+    canvas {
+      position: relative;
+      background-color:green;
+      border:none;  
+      /*3px solid #000;*/
+  }
+    
